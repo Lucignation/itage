@@ -171,7 +171,7 @@ export const Footer: React.FC = () => {
               rel="noreferrer"
               style={{ color: 'inherit', textDecoration: 'underline' }}
             >
-              Lucignation.
+              Lucignation
             </a>
             .
           </p>
