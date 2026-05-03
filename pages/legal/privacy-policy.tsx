@@ -44,7 +44,7 @@ const PrivacyPolicyPage: NextPage = () => (
       </ul>
       <p style={{ color: 'var(--white)', fontWeight: 700, marginBottom: 8 }}>Payment Information</p>
       <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, fontSize: 15 }}>
-        Payments are processed through third-party payment providers such as Paystack.
+        Payments are processed through third-party payment providers such as Flutterwave.
         We do not store your card details.
       </p>
     </section>
