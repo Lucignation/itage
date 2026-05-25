@@ -10,6 +10,11 @@ const LEGAL_LINKS = [
     body: 'How Ìtàgé collects, uses, shares, and protects user information.',
   },
   {
+    title: 'Account Deletion',
+    href: '/legal/account-deletion',
+    body: 'How users can request deletion of their account and what records may be retained.',
+  },
+  {
     title: 'Terms of Service',
     href: '/legal/terms-of-service',
     body: 'Rules governing viewer rentals, creator uploads, and platform usage.',
@@ -32,7 +37,7 @@ const LegalIndexPage: NextPage = () => (
     description="Legal pages for Ìtàgé."
     sectionLabel="Legal"
     heading={<>PLATFORM <span style={{ color: 'var(--red)' }}>POLICIES</span></>}
-    intro="Browse privacy, terms, cookie, and copyright information for Ìtàgé."
+    intro="Browse privacy, account deletion, terms, cookie, and copyright information for Ìtàgé."
     backHref="/"
     backLabel="Back to home"
   >

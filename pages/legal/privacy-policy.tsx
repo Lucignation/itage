@@ -2,13 +2,15 @@ import type { NextPage } from 'next';
 
 import { InfoPageLayout } from '@/components/layout/InfoPageLayout';
 
+const SUPPORT_EMAIL = 'support@itagetv.com';
+
 const PrivacyPolicyPage: NextPage = () => (
   <InfoPageLayout
     title="Ìtàgé Privacy Policy"
     description="Privacy Policy for Ìtàgé."
     sectionLabel="Legal"
     heading={<>PRIVACY <span style={{ color: 'var(--red)' }}>POLICY</span></>}
-    intro="Last Updated: March 6, 2026"
+    intro="Last Updated: May 24, 2026"
     backHref="/legal"
     backLabel="Back to legal"
   >
@@ -98,7 +100,8 @@ const PrivacyPolicyPage: NextPage = () => (
         <li>Request account deletion</li>
       </ul>
       <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, fontSize: 15 }}>
-        Requests can be sent to: [support email]
+        Deletion requests can be sent to {SUPPORT_EMAIL}. Please also review our Account Deletion
+        Policy for more information about verification, processing timelines, and retained records.
       </p>
     </section>
 

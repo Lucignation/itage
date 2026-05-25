@@ -19,6 +19,7 @@ const LINKS = {
   ],
   Legal: [
     { label: 'Privacy Policy', href: '/legal/privacy-policy' },
+    { label: 'Account Deletion', href: '/legal/account-deletion' },
     { label: 'Terms of Service', href: '/legal/terms-of-service' },
     { label: 'Cookie Policy', href: '/legal/cookie-policy' },
     { label: 'DMCA', href: '/legal/dmca' },
