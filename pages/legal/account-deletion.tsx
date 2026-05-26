@@ -16,8 +16,8 @@ const AccountDeletionPage: NextPage = () => (
   >
     <section className="card">
       <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, fontSize: 15 }}>
-        This Account Deletion Policy explains how viewers and content owners can request deletion
-        of their Ìtàgé account, what happens after a valid request is submitted, and which records
+        This Account Deletion Policy explains how viewers and content owners can delete
+        their Ìtàgé account, what happens after a valid request is submitted, and which records
         may still be retained for legal, security, tax, payment, and anti-fraud purposes.
       </p>
     </section>
@@ -38,16 +38,20 @@ const AccountDeletionPage: NextPage = () => (
 
     <section className="card">
       <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 28, marginBottom: 16 }}>
-        2. HOW TO REQUEST ACCOUNT DELETION
+        2. HOW TO DELETE YOUR ACCOUNT
       </h2>
       <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, fontSize: 15, marginBottom: 16 }}>
-        To request deletion, email:
+        You can delete your account directly from the current account settings experience:
       </p>
+      <ul style={{ paddingLeft: 20, color: 'rgba(255,255,255,0.6)', lineHeight: 1.9, fontSize: 15, marginBottom: 16 }}>
+        <li>Viewer accounts: open the viewer mobile app profile screen and use Delete Account.</li>
+        <li>Owner accounts: open the owner mobile app or owner web settings page and use Delete Account.</li>
+      </ul>
       <p style={{ color: 'var(--white)', fontWeight: 700, fontSize: 16, marginBottom: 16 }}>
-        {SUPPORT_EMAIL}
+        If you cannot access your account, contact {SUPPORT_EMAIL}
       </p>
       <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, fontSize: 15, marginBottom: 16 }}>
-        Include enough information for us to confirm ownership of the account:
+        We may still ask for enough information to confirm ownership of the account:
       </p>
       <ul style={{ paddingLeft: 20, color: 'rgba(255,255,255,0.6)', lineHeight: 1.9, fontSize: 15 }}>
         <li>Full name on the account</li>
@@ -62,12 +66,12 @@ const AccountDeletionPage: NextPage = () => (
         3. REVIEW AND PROCESSING
       </h2>
       <ul style={{ paddingLeft: 20, color: 'rgba(255,255,255,0.6)', lineHeight: 1.9, fontSize: 15, marginBottom: 16 }}>
-        <li>We review the request and may ask for additional verification.</li>
-        <li>Access to the account may be disabled while the request is being processed.</li>
-        <li>Deletion may be delayed if there is an unresolved payment issue, dispute, fraud review, or legal obligation.</li>
+        <li>We may ask for additional verification before finalizing deletion.</li>
+        <li>Deletion may be blocked if there is an unresolved payment issue, wallet balance, withdrawal review, dispute, fraud review, or legal obligation.</li>
+        <li>Once deletion is approved, access to the account is disabled and active sessions are revoked.</li>
       </ul>
       <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, fontSize: 15 }}>
-        We aim to process valid requests within 30 days, although some requests may take longer
+        We aim to process valid requests within 30 days, although some edge cases may take longer
         when further verification or compliance checks are required.
       </p>
     </section>
@@ -110,6 +114,7 @@ const AccountDeletionPage: NextPage = () => (
         <li>Deleted accounts may not be recoverable.</li>
         <li>Access to rentals, watch history, and saved account preferences may be lost.</li>
         <li>Content owners may lose access to uploaded content, earnings views, and analytics dashboards.</li>
+        <li>Owner content may be disabled or removed from active distribution as part of the deletion flow.</li>
         <li>Open obligations or unresolved compliance reviews may prevent immediate deletion.</li>
       </ul>
     </section>
@@ -119,7 +124,7 @@ const AccountDeletionPage: NextPage = () => (
         7. CONTACT
       </h2>
       <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, fontSize: 15, marginBottom: 12 }}>
-        If you have questions about this policy or want to submit a deletion request, contact:
+        If you have questions about this policy or need deletion help because you cannot sign in, contact:
       </p>
       <p style={{ color: 'var(--white)', fontWeight: 700, fontSize: 16 }}>
         {SUPPORT_EMAIL}

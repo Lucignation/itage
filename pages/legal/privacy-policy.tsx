@@ -97,11 +97,13 @@ const PrivacyPolicyPage: NextPage = () => (
       <ul style={{ paddingLeft: 20, color: 'rgba(255,255,255,0.6)', lineHeight: 1.9, fontSize: 15, marginBottom: 16 }}>
         <li>Access their account data</li>
         <li>Update their information</li>
-        <li>Request account deletion</li>
+        <li>Delete their account</li>
       </ul>
       <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, fontSize: 15 }}>
-        Deletion requests can be sent to {SUPPORT_EMAIL}. Please also review our Account Deletion
-        Policy for more information about verification, processing timelines, and retained records.
+        Account deletion is available from the viewer mobile app profile screen and the owner app or
+        owner web settings page. If you cannot access your account, contact {SUPPORT_EMAIL}. Please
+        also review our Account Deletion Policy for more information about verification, processing
+        timelines, and retained records.
       </p>
     </section>
 
