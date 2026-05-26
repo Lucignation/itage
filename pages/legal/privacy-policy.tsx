@@ -10,7 +10,7 @@ const PrivacyPolicyPage: NextPage = () => (
     description="Privacy Policy for Ìtàgé."
     sectionLabel="Legal"
     heading={<>PRIVACY <span style={{ color: 'var(--red)' }}>POLICY</span></>}
-    intro="Last Updated: May 24, 2026"
+    intro="Last Updated: May 26, 2026"
     backHref="/legal"
     backLabel="Back to legal"
   >
@@ -101,9 +101,11 @@ const PrivacyPolicyPage: NextPage = () => (
       </ul>
       <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, fontSize: 15 }}>
         Account deletion is available from the viewer mobile app profile screen and the owner app or
-        owner web settings page. If you cannot access your account, contact {SUPPORT_EMAIL}. Please
-        also review our Account Deletion Policy for more information about verification, processing
-        timelines, and retained records.
+        owner web settings page. You must confirm deletion with your current password, and if
+        two-factor authentication is enabled you must also enter your current authenticator code.
+        Deletion may be blocked until wallet balances or pending owner withdrawals are resolved. If
+        you cannot access your account, contact {SUPPORT_EMAIL}. Please also review our Account
+        Deletion Policy for more information about verification, processing, and retained records.
       </p>
     </section>
 

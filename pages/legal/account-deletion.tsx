@@ -10,7 +10,7 @@ const AccountDeletionPage: NextPage = () => (
     description="Account deletion policy for Ìtàgé."
     sectionLabel="Legal"
     heading={<>ACCOUNT <span style={{ color: 'var(--red)' }}>DELETION</span></>}
-    intro="Last Updated: May 24, 2026"
+    intro="Last Updated: May 26, 2026"
     backHref="/legal"
     backLabel="Back to legal"
   >
@@ -46,12 +46,14 @@ const AccountDeletionPage: NextPage = () => (
       <ul style={{ paddingLeft: 20, color: 'rgba(255,255,255,0.6)', lineHeight: 1.9, fontSize: 15, marginBottom: 16 }}>
         <li>Viewer accounts: open the viewer mobile app profile screen and use Delete Account.</li>
         <li>Owner accounts: open the owner mobile app or owner web settings page and use Delete Account.</li>
+        <li>You must confirm the action with your current password.</li>
+        <li>If two-factor authentication is enabled, you must also enter the current 6-digit authenticator code.</li>
       </ul>
       <p style={{ color: 'var(--white)', fontWeight: 700, fontSize: 16, marginBottom: 16 }}>
         If you cannot access your account, contact {SUPPORT_EMAIL}
       </p>
       <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, fontSize: 15, marginBottom: 16 }}>
-        We may still ask for enough information to confirm ownership of the account:
+        For support-assisted deletion, we may still ask for enough information to confirm ownership of the account:
       </p>
       <ul style={{ paddingLeft: 20, color: 'rgba(255,255,255,0.6)', lineHeight: 1.9, fontSize: 15 }}>
         <li>Full name on the account</li>
@@ -66,13 +68,15 @@ const AccountDeletionPage: NextPage = () => (
         3. REVIEW AND PROCESSING
       </h2>
       <ul style={{ paddingLeft: 20, color: 'rgba(255,255,255,0.6)', lineHeight: 1.9, fontSize: 15, marginBottom: 16 }}>
-        <li>We may ask for additional verification before finalizing deletion.</li>
-        <li>Deletion may be blocked if there is an unresolved payment issue, wallet balance, withdrawal review, dispute, fraud review, or legal obligation.</li>
-        <li>Once deletion is approved, access to the account is disabled and active sessions are revoked.</li>
+        <li>When the self-serve checks pass, deletion is processed immediately after confirmation.</li>
+        <li>We may ask for additional verification before finalizing support-assisted deletion requests.</li>
+        <li>Deletion may be blocked if the account still has wallet balance, unresolved payment issues, fraud review, dispute review, or a legal obligation that prevents immediate removal.</li>
+        <li>Owner account deletion may also be blocked until pending or approved withdrawal requests are fully resolved.</li>
+        <li>Once deletion is completed, access to the account is disabled and active sessions are revoked.</li>
       </ul>
       <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, fontSize: 15 }}>
-        We aim to process valid requests within 30 days, although some edge cases may take longer
-        when further verification or compliance checks are required.
+        Most in-product deletions complete during the same session. Support-assisted requests may take
+        longer when further verification or compliance checks are required.
       </p>
     </section>
 
@@ -86,6 +90,8 @@ const AccountDeletionPage: NextPage = () => (
       <ul style={{ paddingLeft: 20, color: 'rgba(255,255,255,0.6)', lineHeight: 1.9, fontSize: 15 }}>
         <li>Profile information</li>
         <li>Login credentials and active sessions</li>
+        <li>Stored phone number and date of birth</li>
+        <li>Two-factor authentication secrets and security settings</li>
         <li>Saved preferences and non-essential account settings</li>
         <li>Support records that no longer need to be retained</li>
       </ul>
@@ -112,9 +118,10 @@ const AccountDeletionPage: NextPage = () => (
       </h2>
       <ul style={{ paddingLeft: 20, color: 'rgba(255,255,255,0.6)', lineHeight: 1.9, fontSize: 15 }}>
         <li>Deleted accounts may not be recoverable.</li>
+        <li>You are signed out immediately after deletion.</li>
         <li>Access to rentals, watch history, and saved account preferences may be lost.</li>
         <li>Content owners may lose access to uploaded content, earnings views, and analytics dashboards.</li>
-        <li>Owner content may be disabled or removed from active distribution as part of the deletion flow.</li>
+        <li>Owner movie catalog items may be disabled as part of the deletion flow.</li>
         <li>Open obligations or unresolved compliance reviews may prevent immediate deletion.</li>
       </ul>
     </section>
