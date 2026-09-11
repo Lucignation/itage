@@ -29,7 +29,7 @@ const AccessibilityPage: NextPage = () => (
         If you encounter accessibility barriers, please contact us at:
       </p>
       <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, fontSize: 15 }}>
-        accessibility@[yourdomain].com
+        support@itagetv.com
       </p>
     </section>
   </InfoPageLayout>

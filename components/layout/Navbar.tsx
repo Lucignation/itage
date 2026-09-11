@@ -7,7 +7,7 @@ import itageLogo from '@/assets/images/itage-logo.png';
 const NAV_LINKS = [
   { label: 'Browse',   href: '#browse'   },
   { label: 'Creators', href: '#creators' },
-  { label: 'About',    href: '#about'    },
+  { label: 'About',    href: '/company/about-us'    },
 ];
 
 export const Navbar: React.FC = () => {

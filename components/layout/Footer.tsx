@@ -12,10 +12,10 @@ const LINKS = {
     { label: 'Categories', href: '#browse' },
   ],
   Company: [
-    { label: 'About Us', href: '#about' },
-    { label: 'Careers', href: '#about' },
-    { label: 'Press', href: '#about' },
-    { label: 'Blog', href: '#about' },
+    { label: 'About Us', href: '/company/about-us' },
+    // { label: 'Careers', href: '#about' },
+    // { label: 'Press', href: '#about' },
+    // { label: 'Blog', href: '#about' },
   ],
   Legal: [
     { label: 'Privacy Policy', href: '/legal/privacy-policy' },
@@ -25,9 +25,9 @@ const LINKS = {
     { label: 'DMCA', href: '/legal/dmca' },
   ],
   Support: [
-    { label: 'Help Center', href: '/support/help-center' },
-    { label: 'Contact Us', href: '/support/contact-us' },
-    { label: 'Report Issue', href: '/support/report-issue' },
+    // { label: 'Help Center', href: '/support/help-center' },
+    // { label: 'Contact Us', href: '/support/contact-us' },
+    // { label: 'Report Issue', href: '/support/report-issue' },
     { label: 'Accessibility', href: '/support/accessibility' },
   ],
 };
@@ -162,7 +162,7 @@ export const Footer: React.FC = () => {
           flexWrap: 'wrap', gap: 12,
         }}>
           <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.3)' }}>
-            © {new Date().getFullYear()} Ìtàgé. All rights reserved.
+            © {new Date().getFullYear()} Ìtàgé. All rights reserved.| A Vic Expose Limited company.
           </p>
           <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.3)' }}>
             Made for Ìtàgé, by{' '}

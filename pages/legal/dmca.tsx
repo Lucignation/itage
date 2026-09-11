@@ -36,7 +36,7 @@ const DmcaPage: NextPage = () => (
       </ul>
       <p style={{ color: 'var(--white)', fontWeight: 700, marginBottom: 8 }}>Send reports to:</p>
       <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, fontSize: 15 }}>
-        Email: [copyright email]
+        Email: support@itagetv.com
       </p>
     </section>
 

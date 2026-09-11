@@ -27,7 +27,7 @@ const ReportIssuePage: NextPage = () => (
     <section className="card">
       <p style={{ color: 'var(--white)', fontWeight: 700, marginBottom: 8 }}>Submit reports to:</p>
       <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, fontSize: 15 }}>
-        Email: support@[yourdomain].com
+        Email: support@itagetv.com
       </p>
     </section>
   </InfoPageLayout>

@@ -8,17 +8,17 @@ import { Navbar } from '@/components/layout/Navbar';
 const CONTACT_CHANNELS = [
   {
     label: 'Email Support',
-    value: 'support@[yourdomain].com',
+    value: 'support@itagetv.com',
     detail: 'Best for account help, billing questions, and general assistance.',
   },
   {
     label: 'Phone Line',
-    value: '[Insert phone number]',
+    value: '+234 803 564 0399',
     detail: 'Use for urgent escalations and time-sensitive support requests.',
   },
   {
     label: 'Office Address',
-    value: '[Insert company address]',
+    value: 'Lagos, Nigeria',
     detail: 'For business correspondence and registered company inquiries.',
   },
 ];
