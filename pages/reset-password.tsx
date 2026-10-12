@@ -34,6 +34,8 @@ const ResetPasswordPage: NextPage = () => {
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showNewPassword, setShowNewPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -117,48 +119,92 @@ const ResetPasswordPage: NextPage = () => {
           <form onSubmit={onSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
             <label style={{ color: 'var(--gray-100)', fontSize: 14, fontWeight: 600 }}>
               New Password
-              <input
-                type="password"
-                autoComplete="new-password"
-                placeholder="At least 8 characters"
-                value={newPassword}
-                onChange={event => setNewPassword(event.target.value)}
-                style={{
-                  width: '100%',
-                  marginTop: 8,
-                  padding: '13px 14px',
-                  borderRadius: 10,
-                  border: '1px solid rgba(255,255,255,0.14)',
-                  background: 'var(--gray-800)',
-                  color: 'var(--white)',
-                  fontFamily: 'var(--font-body)',
-                  fontSize: 15,
-                }}
-                required
-              />
+              <span style={{ display: 'block', marginTop: 8, position: 'relative' }}>
+                <input
+                  type={showNewPassword ? 'text' : 'password'}
+                  autoComplete="new-password"
+                  placeholder="At least 8 characters"
+                  value={newPassword}
+                  onChange={event => setNewPassword(event.target.value)}
+                  style={{
+                    width: '100%',
+                    padding: '13px 72px 13px 14px',
+                    borderRadius: 10,
+                    border: '1px solid rgba(255,255,255,0.14)',
+                    background: 'var(--gray-800)',
+                    color: 'var(--white)',
+                    fontFamily: 'var(--font-body)',
+                    fontSize: 15,
+                  }}
+                  required
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowNewPassword(value => !value)}
+                  aria-label={showNewPassword ? 'Hide new password' : 'Show new password'}
+                  style={{
+                    position: 'absolute',
+                    right: 12,
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    border: 0,
+                    background: 'transparent',
+                    color: 'var(--red)',
+                    fontFamily: 'var(--font-body)',
+                    fontSize: 13,
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                    padding: '8px 0',
+                  }}
+                >
+                  {showNewPassword ? 'Hide' : 'Show'}
+                </button>
+              </span>
             </label>
 
             <label style={{ color: 'var(--gray-100)', fontSize: 14, fontWeight: 600 }}>
               Confirm Password
-              <input
-                type="password"
-                autoComplete="new-password"
-                placeholder="Repeat your password"
-                value={confirmPassword}
-                onChange={event => setConfirmPassword(event.target.value)}
-                style={{
-                  width: '100%',
-                  marginTop: 8,
-                  padding: '13px 14px',
-                  borderRadius: 10,
-                  border: '1px solid rgba(255,255,255,0.14)',
-                  background: 'var(--gray-800)',
-                  color: 'var(--white)',
-                  fontFamily: 'var(--font-body)',
-                  fontSize: 15,
-                }}
-                required
-              />
+              <span style={{ display: 'block', marginTop: 8, position: 'relative' }}>
+                <input
+                  type={showConfirmPassword ? 'text' : 'password'}
+                  autoComplete="new-password"
+                  placeholder="Repeat your password"
+                  value={confirmPassword}
+                  onChange={event => setConfirmPassword(event.target.value)}
+                  style={{
+                    width: '100%',
+                    padding: '13px 72px 13px 14px',
+                    borderRadius: 10,
+                    border: '1px solid rgba(255,255,255,0.14)',
+                    background: 'var(--gray-800)',
+                    color: 'var(--white)',
+                    fontFamily: 'var(--font-body)',
+                    fontSize: 15,
+                  }}
+                  required
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowConfirmPassword(value => !value)}
+                  aria-label={showConfirmPassword ? 'Hide confirm password' : 'Show confirm password'}
+                  style={{
+                    position: 'absolute',
+                    right: 12,
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    border: 0,
+                    background: 'transparent',
+                    color: 'var(--red)',
+                    fontFamily: 'var(--font-body)',
+                    fontSize: 13,
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                    padding: '8px 0',
+                  }}
+                >
+                  {showConfirmPassword ? 'Hide' : 'Show'}
+                </button>
+              </span>
             </label>
 
             {message && <p style={{ color: '#36D68A', fontSize: 13 }}>{message}</p>}
